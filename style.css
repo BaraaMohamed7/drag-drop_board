@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	width: 100%;
+	min-height: 100vh;
+	height: fit-content;
+	/* padding: 30px 50px; */
+	display: flex;
+	background-color: teal;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 50px;
+	color: white;
+}
+
+h3 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+.list-box {
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	min-height: 50px;
+}
+
+.task {
+	background-color: white;
+	color: black;
+	padding: 15px 20px;
+	border-radius: 10px;
+}
+
+.task input {
+	border: none;
+	outline: none;
+	display: inline-block;
+	padding: 2px 5px;
+	width: 116px;
+}
+
+li.task span {
+	font-size: 20px;
+	margin-right: 50px;
+}
+
+button {
+	border: none;
+	border-radius: 20px;
+	padding: 5px 10px;
+	color: white;
+	cursor: pointer;
+}
+
+.edit,
+.add {
+	background-color: teal;
+}
+.delete {
+	background-color: red;
+}
+
+.add {
+	padding: 10px;
+	margin-top: 20px;
+	font-weight: bold;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	width: 100%;
+}
+
+.inputs input {
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	main {
+		flex-direction: column;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.list-box {
+		min-width: 250px;
+	}
+}
